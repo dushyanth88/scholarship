@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Scholarship</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Scholarship Application Form</h1>
+    </header>
+
+    <form action="/submit-application" method="POST" enctype="multipart/form-data">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="gpa">GPA:</label>
+        <input type="text" id="gpa" name="gpa" required>
+
+        <label for="essay">Statement of Purpose:</label>
+        <textarea id="essay" name="essay" rows="4" required></textarea>
+
+        
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <footer>
+        <p>Contact us at <a href="mailto:scholarship@xyz.org">scholarship@xyz.org</a></p>
+    </footer>
+</body>
+</html>
